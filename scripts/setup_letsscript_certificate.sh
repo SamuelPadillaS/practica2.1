@@ -21,8 +21,6 @@ apt remove certbot
 snap install core
 snap refresh core
 
-
-
 # Instalamos la aplicacion certbot
 snap install --classic certbot
 
