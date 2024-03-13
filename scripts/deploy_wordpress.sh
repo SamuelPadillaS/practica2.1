@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Muestra todos los comandos que se han ejeutado.
-
 set -ex
 
 # Actualización de repositorios
- sudo apt update
+apt update
 
 # Actualización de paquetes
 # sudo apt upgrade  
