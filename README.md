@@ -1,5 +1,17 @@
 # Despliegue de WordPress utilizando una pila LEMP
 
+En esta práctica tendremos que realizar la instalación de WordPress sobre una pila LEMP en una instancia EC2 de Amazon Web Services (AWS).
+
+Tendrá que utilizar los scripts que diseñó en la práctica 1.7: “Administración de Wordpress con la utilidad WP-CLI” y adaptarlos para modificar el servidor web Apache por el servidor web Nginx.
+
+Los cambios que tendrá que realizar son los siguientes:
+
+- Crear el archivo install_lemp.sh para instalar y configurar el servidor web Nginx.
+  
+- Modificar el script setup_letsencrypt_https.sh para indicarle a certbot que estamos utilizando un servidor web Nginx.
+  
+- Configurar el servidor web Nginx para poder utilizar enlaces permanentes en WordPress. Tenga en cuenta que el servidor Nginx no utiliza archivos .htaccess para mejorar su rendimiento. Se recomienda la lectura de este artículo de la página oficial de Nginx donde explica brevemente esta cuestión.
+
 Lo primero de todo sera indicar la estructura básica que seguira nuestra práctica
 
 ~~~
@@ -255,4 +267,5 @@ Ya contodo creado solo nos quedaria ejecutar los comandos en el orden correspond
 
 - 3º. setup_letsencrypt_certificate.sh
   
+![Captura de pantalla 2024-06-16 184319](https://github.com/SamuelPadillaS/practica2.1/assets/114667075/a888b273-d4e4-4281-b6e8-a1f3a2db691b)
 
